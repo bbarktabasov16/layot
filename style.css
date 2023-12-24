@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 238, 216, 0.49);
+}
+.container {
+    width: 70vw;
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px 0 20px;
+}
+.block__item {
+    padding-bottom: 20px;
+    border: 3px solid rgb(255, 193, 77);
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.title {
+    background-color: rgb(255, 162, 181);
+    margin-top: -6px;
+    border-bottom: 3px solid rgb(255, 193, 77);
+    border-radius: 15px 15px 0 0;
+    width: 295px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gluten', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.block__item img {
+    width: 80px;
+    height: 80px;
+}  
+.description {
+    color: rgb(249, 73, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1350px) {
+    .container {
+        margin-top: 300px;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        margin-top: 1250px;
+    }
+    .block__item {
+        margin-left: -15px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        margin-top: 1400px;
+    }
+}
